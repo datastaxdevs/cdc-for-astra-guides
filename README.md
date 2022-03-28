@@ -1,6 +1,6 @@
 # astra-cdc-demo
 
-This is a step by step guide to enabling the CDC for Astra DB. It connectes an existing table in Astra DB to an Astra Streaming topic, which we then connect to a sink that writes changes messages back to another table.
+This is a step by step guide to enabling the CDC for Astra DB. It connects a table in Astra DB to an Astra Streaming topic, which is then connected to a sink that writes changes messages to another DB table.
 
 ## Prerequisites
 
