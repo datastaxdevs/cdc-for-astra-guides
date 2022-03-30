@@ -1,4 +1,4 @@
-#elasticsearch-sink
+# elasticsearch-sink
 
 This is a step by step guide to enabling CDC for Astra DB.The goal is to get updates in Elastic Search when data in an Astra DB table changes. We’ll accomplish this through the change data capture pattern.
 
@@ -108,7 +108,9 @@ The new tenant will be ready to go very quickly and your view will automatically
 
 1. Add a new record to the all_accounts table
 
-    `insert into our_product.all_accounts (id, full_name, email) values (5b6962dd-3f90-4c93-8f61-eabfa4a803e2, 'Suzie Shoe', 'suzie_s@acoolplace.com');`
+    ```
+    insert into our_product.all_accounts (id, full_name, email) values (5b6962dd-3f90-4c93-8f61-eabfa4a803e2, 'Suzie Shoe', 'suzie_s@acoolplace.com');
+    ```
 
 1. In your Elasticsearch deployment choose "Management" > "Stack Management" from the left menu
 
