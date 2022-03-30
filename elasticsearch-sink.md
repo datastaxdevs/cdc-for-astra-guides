@@ -99,7 +99,7 @@ The new tenant will be ready to go very quickly and your view will automatically
     - Enable schema: true
     - Copy key fields: false
 
-![my-company-streams-sink](https://user-images.githubusercontent.com/16946028/160871146-c3d20d0b-35de-4ae2-8fd0-f2699d5185b7.png)
+    ![my-company-streams-sink](https://user-images.githubusercontent.com/16946028/160871640-7058f10f-6c47-4d31-8e9b-91004be23c0c.png)
 
 Your view will go back to the "Sinks" page where you can see the "Status". Once it says "Running" the sink is complete (you may need to refresh the browser window).
 
