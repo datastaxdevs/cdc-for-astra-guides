@@ -16,7 +16,7 @@ This is a step by step guide to enabling the CDC for Astra DB. It connects a tab
 
     ![Screenshot 2022-03-28 152026](https://user-images.githubusercontent.com/16946028/160471085-86edcc64-639f-4395-83b2-9098f2be7d00.png)
 
-3. Choose "Create Database" and create a serverless database with the following details:
+1. Choose "Create Database" and create a serverless database with the following details:
 
     Database Name: `my_company`
     
@@ -125,7 +125,7 @@ The new tenant will be ready to go very quickly and your view will automatically
 
     ![image1](https://user-images.githubusercontent.com/16946028/160470132-141d5fab-db5e-45c7-b6a9-c1f83f3bbcbe.png)
 
-	Your view will go back to the "Sinks" page where you can see the "Status". Once it says "Running" the sink is complete (you may need to refresh the browser window).
+	Your view will go back to the "Sinks" page where you can see the "Status". Once it says "Running" the sink is complete.
 
     ![image12](https://user-images.githubusercontent.com/16946028/160470291-41cc67ba-0f60-4d91-bfa8-4838e2b14330.png)
 
@@ -144,7 +144,3 @@ The new tenant will be ready to go very quickly and your view will automatically
     `select * from our_product.cdc_accounts;`
 
     ![image11](https://user-images.githubusercontent.com/16946028/160470454-7b143f63-f59f-4385-9028-013ea796923b.png)
-
-## Summary
-
-That was cool
