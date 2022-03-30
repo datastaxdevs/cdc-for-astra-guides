@@ -43,6 +43,7 @@ This is a step by step guide to enabling CDC for Astra DB.The goal is to get upd
 1. Choose "Create Streaming" and create a new tenant with the following details;
 
     Tenant Name: `my-company-streams`
+    
     Provider and Region: `Google Cloud > uscentral1`
 
     ![image9](https://user-images.githubusercontent.com/16946028/160469465-829a24cb-312a-4248-963d-ea3b22116add.png)
@@ -58,7 +59,9 @@ The new tenant will be ready to go very quickly and your view will automatically
 1. Enable CDC with the following details:
 
     Tenant: `pulsar-gcp-uscentral1 / my-company-streams`
+    
     Keyspace: `our_product`
+    
     Table name: `all_accounts`
 
     ![image13](https://user-images.githubusercontent.com/16946028/160469581-47f9772d-d624-4495-91e9-39edffb05cea.png)
@@ -96,9 +99,9 @@ The new tenant will be ready to go very quickly and your view will automatically
     - Enable schema: true
     - Copy key fields: false
 
-	    Your view will go back to the "Sinks" page where you can see the "Status". Once it says "Running" the sink is complete (you may need to refresh the browser window).
+![my-company-streams-sink](https://user-images.githubusercontent.com/16946028/160871146-c3d20d0b-35de-4ae2-8fd0-f2699d5185b7.png)
 
-![alt_text](images/image10.png "image_tooltip")
+Your view will go back to the "Sinks" page where you can see the "Status". Once it says "Running" the sink is complete (you may need to refresh the browser window).
 
 ## Insert data to observe CDC in action
 
