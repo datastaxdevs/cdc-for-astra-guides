@@ -50,6 +50,7 @@ This is a step by step guide to enabling the CDC for Astra DB. It connects a tab
 
     Tenant Name: `my-company-streams`
     Provider and Region: `Google Cloud > uscentral1`
+    > !! Choose unique name for your tenant
 
     ![image9](https://user-images.githubusercontent.com/16946028/160469465-829a24cb-312a-4248-963d-ea3b22116add.png)
 
@@ -111,7 +112,7 @@ The new tenant will be ready to go very quickly and your view will automatically
     - Name: `astra-account-sink`
 
     Connect Topics
-    - Topic: data-&lt;UUID>-our_product.all_accounts
+    - Topic: `data-&lt;UUID>-our_product.all_accounts`
 
     Sink-Specific Configuration
     - Database: `my_company`
@@ -119,6 +120,7 @@ The new tenant will be ready to go very quickly and your view will automatically
     - Table name: `cdc_accounts`
     - Token: &lt;paste from clipboard>
     - Mapping: `id=key.id, full_name=value.full_name, email=value.email`
+    - Hit "Create" button once done
 
     > !! The default "Mapping" value is incorrect for our schema. Make sure to overwrite with the above value.
 
@@ -137,10 +139,14 @@ The new tenant will be ready to go very quickly and your view will automatically
 
 1. Add a new record to the all_accounts table
 
-    `insert into our_product.all_accounts (id, full_name, email) values (5b6962dd-3f90-4c93-8f61-eabfa4a803e2, 'Suzie Shoe', 'suzie_s@acoolplace.com');`
+    ```
+    insert into our_product.all_accounts (id, full_name, email) values (5b6962dd-3f90-4c93-8f61-eabfa4a803e2, 'Suzie Shoe', 'suzie_s@acoolplace.com');
+    ```
 
 1. Observe the new record in cdc_accounts table by selecting all rows
 
-    `select * from our_product.cdc_accounts;`
+    ```
+    select * from our_product.cdc_accounts;
+    ```
 
     ![image11](https://user-images.githubusercontent.com/16946028/160470454-7b143f63-f59f-4385-9028-013ea796923b.png)
