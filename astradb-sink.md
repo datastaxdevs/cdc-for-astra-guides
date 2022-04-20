@@ -12,7 +12,7 @@ This is a step by step guide to enabling the CDC for Astra DB. It connects a tab
 
     ![image18](https://user-images.githubusercontent.com/16946028/160468872-d04619f4-8c7f-4315-b673-5d0eb425d47e.png)
 
-1. Login to your Astra account
+1. Login to your existing Astra account OR! [sign up for free](https://astra.dev/4-20)
 
     ![Screenshot 2022-03-28 152026](https://user-images.githubusercontent.com/16946028/160471085-86edcc64-639f-4395-83b2-9098f2be7d00.png)
 
